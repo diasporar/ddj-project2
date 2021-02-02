@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 72488955}
   - component: {fileID: 72488957}
   m_Layer: 5
-  m_Name: PlayerHud
+  m_Name: AssistantHud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1070,14 +1070,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  enemyLocation: {fileID: 1674981124}
-  enemyPrefab: {fileID: 8308536432862384725, guid: 08ae96546da774342b5c2aa3f00bbfd7,
+  heroLocation: {fileID: 0}
+  assistantLocation: {fileID: 1951724098}
+  enemyLocation1: {fileID: 1674981124}
+  enemyLocation2: {fileID: 0}
+  enemyLocation3: {fileID: 0}
+  enemyLocation4: {fileID: 0}
+  heroPrefab: {fileID: 0}
+  assistantPrefab: {fileID: 7941032859050768765, guid: 535504ba420fc7248ad3990a70ff1cb1,
     type: 3}
-  enemyHud: {fileID: 1283115819}
-  playerLocation: {fileID: 1951724098}
-  playerPrefab: {fileID: 7941032859050768765, guid: 535504ba420fc7248ad3990a70ff1cb1,
+  enemyPrefab1: {fileID: 8308536432862384725, guid: 08ae96546da774342b5c2aa3f00bbfd7,
     type: 3}
-  playerHud: {fileID: 72488957}
+  enemyPrefab2: {fileID: 0}
+  enemyPrefab3: {fileID: 0}
+  enemyPrefab4: {fileID: 0}
+  heroHud: {fileID: 0}
+  assistantHud: {fileID: 72488957}
+  enemyHud1: {fileID: 1283115819}
+  enemyHud2: {fileID: 0}
+  enemyHud3: {fileID: 0}
+  enemyHud4: {fileID: 0}
   dialogueText: {fileID: 1170472335}
 --- !u!4 &1022716606
 Transform:
@@ -1595,7 +1607,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2304,7 +2316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1951724098}
   m_Layer: 0
-  m_Name: PlayerLocation
+  m_Name: AssistantLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
